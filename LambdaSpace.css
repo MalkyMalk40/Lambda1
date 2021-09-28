@@ -1,0 +1,153 @@
+        #logo {
+            font-family: 'Kaisei Opti', serif;
+            font-size: 200px;
+            transform: rotate(180deg);
+            color: whitesmoke;
+            display: inline-block;
+            justify-content: left;
+            vertical-align: text-top;
+            padding: 0%;
+            margin-left: 20px;
+            text-shadow: -10px -10px 20px #fa3939;
+            position: relative;
+            box-shadow: #fa3939 -15px -20px 20px;
+            height: 250px;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition-duration: 3s;
+        }
+        
+        #logo::after {
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            display: block;
+            color: azure;
+        }
+        
+        body {
+            background-image: url(https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 98%;
+            image-resolution: revert;
+        }
+        
+        .links {
+            display: inline-flexbox;
+            font-size: 23px;
+            text-decoration: none;
+            vertical-align: center;
+            border-radius: 25px;
+            justify-content: space-between;
+            border-color: #fa3939;
+            border-style: solid;
+            text-shadow: 5px 5px 5px #fa3939;
+            box-shadow: 5px 5px 5px #fa3939, 3px 3px 1em, 5px .5em 1em white;
+            color: white;
+            height: 30px;
+            padding: 10px;
+            margin-top: 45px;
+            border-width: 6px;
+        }
+        
+        .links:hover {
+            color: #fa3939;
+            background: #F4FF00;
+            box-shadow: -5px -5px 20px #F4FF00, 10px 10px 20px #F4FF00;
+        }
+        
+        .navbar {
+            padding-top: 5px;
+            vertical-align: bottom;
+            align-content: space-between;
+            display: flex;
+            margin: 2%;
+            width: 90%;
+            justify-content: space-between;
+            height: 100%;
+        }
+        
+        .triangle {
+            width: 0px;
+            height: 0px;
+            border-left: 70px solid transparent;
+            border-right: 70px solid transparent;
+            border-top: 90px solid white;
+            display: block;
+            margin-top: 150px;
+            position: absolute;
+            margin-left: 65px;
+            transform: perspective(2.3em) rotateY(35deg) rotateX(60deg) rotateZ(4deg);
+            filter: blur(1.5em);
+        }
+        
+        .imgs {
+            width: 200px;
+            height: 150px;
+            display: block;
+            align-content: space-around;
+            border-radius: 50%;
+            margin-left: 80%;
+            opacity: .8;
+            border: whitesmoke;
+            border-style: solid;
+            border-width: 4px;
+            box-shadow: 10px 10px 15px whitesmoke, -20px -10px 20px #fa3939;
+            transform: perspective(21em) rotateY(-40deg);
+        }
+        
+        .imgs:hover {
+            border-radius: 45%;
+            opacity: 1;
+            width: 200px;
+            height: 160px;
+            overflow: visible;
+            animation-duration: 2s;
+            transform: rotate(360deg);
+        }
+        
+        .team {
+            width: 100%;
+            height: 100%;
+        }
+        
+        html {
+            border-style: solid;
+            border-width: 5px;
+            border-color: whitesmoke;
+            width: 100%;
+        }
+        
+        h1 {
+            color: azure;
+            text-align: center;
+            opacity: 1;
+            transition: opacity 0;
+            transition-duration: 4s;
+            margin: 0%;
+            padding: 0%;
+            font-size: 25px;
+            padding-top: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            animation-name: title;
+            animation-duration: 4s;
+            letter-spacing: 0.8rem;
+            text-shadow: rgb(255, 147, 147) 0px 2px 2px, rgb(255, 145, 145) -2px -2px 2px;
+            font-family: 'BioRhyme Expanded', serif;
+        }
+        
+        @keyframes title {
+            0% {
+                letter-spacing: -25rem;
+                filter: blur(0.5rem);
+                text-shadow: rgb(250, 55, 55) 20px 20px 20px, rgb(250, 55, 55) -20px -20px 20px;
+            }
+            50% {
+                letter-spacing: -1rem;
+                filter: blur(.5rem);
+            }
+            100% {
+                letter-spacing: 1rem;
+            }
+        }
